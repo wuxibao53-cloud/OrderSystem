@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>生产指令单生成器 · 使用说明</title>
+<style>
+  body{font-family:"Microsoft YaHei",sans-serif;font-size:15px;line-height:1.85;color:#222;
+       max-width:820px;margin:0 auto;padding:28px 32px;background:#fff}
+  h1{font-size:22px;color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:8px;margin-bottom:22px}
+  h2{font-size:17px;color:#1a4d8f;margin:26px 0 10px;padding-left:9px;border-left:4px solid #1a4d8f}
+  h3{font-size:15px;margin:16px 0 6px;color:#333}
+  table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14px}
+  th,td{border:1px solid #d8dce2;padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:#eef2f8;font-weight:normal;color:#1a4d8f}
+  code{background:#f2f4f7;padding:1px 5px;border-radius:3px;font-family:Consolas,monospace;font-size:13px}
+  .tip{background:#fff8e6;border-left:4px solid #e8b44a;padding:9px 14px;margin:12px 0;font-size:14px}
+  .warn{background:#fdf0f0;border-left:4px solid #c0504d;padding:9px 14px;margin:12px 0;font-size:14px}
+  ol,ul{padding-left:22px;margin:8px 0}
+  li{margin:5px 0}
+  .small{color:#777;font-size:13px}
+  .step{background:#f4f7fb;border-radius:5px;padding:12px 16px;margin:10px 0}
+</style>
+</head>
+<body>
+
+<h1>生产指令单生成器 · 使用说明</h1>
+
+<h2>一、平常每天怎么用</h2>
+
+<div class="step">
+  <strong>第 1 步</strong>　双击桌面「<strong>生产指令单生成器</strong>」，等 2~3 秒会弹出黑色窗口。<br>
+  <strong>第 2 步</strong>　按窗口提示逐项输入，每项输完按回车。<br>
+  <strong>第 3 步</strong>　看到「生成成功」后按回车关闭窗口。单子和文件夹已经自动建好。
+</div>
+
+<h3>输入示例：做葡萄糖补充能量片 2 万片</h3>
+<table>
+  <tr><th style="width:44%">窗口提示</th><th style="width:20%">你输入</th><th>说明</th></tr>
+  <tr><td>请输入产品序号（1-6）</td><td><code>2</code></td><td>2 = 葡萄糖补充能量片</td></tr>
+  <tr><td>片重 g/片（回车用 0.5）</td><td>回车</td><td>0.6、0.7 就输数字</td></tr>
+  <tr><td>计划产量（万片）</td><td><code>2</code></td><td>必填</td></tr>
+  <tr><td>瓶数</td><td><code>500</code></td><td>可不填</td></tr>
+  <tr><td>请输入销售经理序号（1-4）</td><td><code>1</code></td><td>1曾帅 2付豪 3房浩绅 4马士龙</td></tr>
+  <tr><td>生产日期（8位）</td><td>回车</td><td>回车 = 今天</td></tr>
+  <tr><td>当天第几单</td><td>回车</td><td>默认 01</td></tr>
+  <tr><td>制表人</td><td>回车</td><td>默认李浩冉</td></tr>
+  <tr><td>生产批次</td><td>回车</td><td>默认 01</td></tr>
+  <tr><td>物料库存（每种一行）</td><td>全部回车</td><td>要查库存才填，填了会自动算够不够</td></tr>
+</table>
+
+<div class="tip">
+  <strong>看不懂某个提示？</strong>直接按回车就行——所有能回车的项目都有默认值，只有「计划产量」必须自己填。
+</div>
+
+<h3>单子生成在哪里</h3>
+<p><code>桌面\10月\20261026\20261026-01葡萄糖补充能量片\20261026-01葡萄糖补充能量片.xlsx</code></p>
+<p class="small">规则：月份文件夹 → 生产日期文件夹 → 单号+产品名文件夹 → 同名 Excel 文件。</p>
+
+<h2>二、有新产品了怎么加</h2>
+
+<div class="step">
+  <strong>第 1 步</strong>　双击桌面「<strong>添加新产品</strong>」。<br>
+  <strong>第 2 步</strong>　输入新产品名称（跟研发给的名字一致）。<br>
+  <strong>第 3 步</strong>　输入片重（一般回车用 0.5）。<br>
+  <strong>第 4 步</strong>　<strong>逐个物料</strong>输入：物料名称 → 比例% → 混料阶段 → 批号，输完一种自动问下一种。<br>
+  <strong>第 5 步</strong>　所有物料输完后，在「物料名称」处<strong>直接按回车</strong>结束。<br>
+  <strong>第 6 步</strong>　看比例合计是否 100%，确认后自动保存。
+</div>
+
+<h3>录入示例：某新产品（两个物料）</h3>
+<table>
+  <tr><th style="width:44%">窗口提示</th><th style="width:22%">你输入</th><th>说明</th></tr>
+  <tr><td>新产品名称</td><td><code>某某片</code></td><td>与研发一致</td></tr>
+  <tr><td>片重 g/片</td><td>回车</td><td>默认 0.5</td></tr>
+  <tr><td>物料名称</td><td><code>某某提取物</code></td><td>第 1 种</td></tr>
+  <tr><td>比例 %</td><td><code>60</code></td><td>研发配方里的百分比</td></tr>
+  <tr><td>混料阶段 1/2/3</td><td><code>1</code></td><td>1=一次混装（主料），2=二次，3=三次</td></tr>
+  <tr><td>物料批号（可空）</td><td><code>20261101</code></td><td>可回车跳过，下次下单再改</td></tr>
+  <tr><td>物料名称</td><td><code>麦芽糊精</code></td><td>第 2 种</td></tr>
+  <tr><td>比例 %</td><td><code>39.3</code></td><td></td></tr>
+  <tr><td>混料阶段 1/2/3</td><td><code>1</code></td><td></td></tr>
+  <tr><td>物料批号</td><td><code>20260525</code></td><td></td></tr>
+  <tr><td>物料名称</td><td><strong>直接回车</strong></td><td>结束录入</td></tr>
+</table>
+
+<div class="warn">
+  <strong>比例合计必须等于 100%。</strong>如果显示不是 100%，说明漏了物料或比例抄错，
+  请对照研发给的配方核对。比例不对，算出来的投料量就不对，会直接导致领料错误。
+</div>
+
+<h3>关于混料阶段的判断</h3>
+<ul>
+  <li><strong>1 一次混装</strong>：主料，先混合的那批（如葡萄糖、麦芽糊精、主要功能成分）</li>
+  <li><strong>2 二次混装</strong>：加进去再混一次（常见是食用葡萄糖、香精等）</li>
+  <li><strong>3 三次混装</strong>：最后加的，通常是硬脂酸镁这类润滑剂</li>
+</ul>
+<p class="small">拿不准就看研发配方表里的工艺顺序，或者参考已有产品的录法。</p>
+
+<h2>三、订单台账（交期跟踪）</h2>
+<p>接单后除了生成生产指令单，<strong>必须在台账里登记交期</strong>，这是催生产、答销售、防逾期的依据。</p>
+<div class='step'><strong>两种登记方式：</strong><br>
+① 用生成器出单后自动进台账（交期在生成器里输入；没输的话去台账补填）；<br>
+② 双击桌面「<strong>订单台账</strong>」→ 2 添加订单。</div>
+<table><tr><th style='width:40%'>台账要点</th><th>说明</th></tr>
+<tr><td>距交期</td><td>自动算。<strong style='color:#c0392b'>红色 = 已逾期</strong>，黄色 = 3 天内到期</td></tr>
+<tr><td>状态流转</td><td>待生产 → 生产中 → 已完成 → 已发货，单子推进后记得改</td></tr></table>
+<div class='warn'>逾期未交的订单会在每天开机播报里<strong>置顶提醒</strong>，日报里也会列出。台账按交期排序，最先到期的永远在最上面。</div>
+
+<h2>四、库存怎么办（每天自动播报）</h2>
+
+<div class="step">
+  <strong>每天开机登录后</strong>，程序会自动检查一次库存：有警报会弹窗提醒，同时生成当天日报。<br>
+  <strong>想随时查</strong>：双击桌面「<strong>库存管理</strong>」。
+</div>
+
+<h3>库存管理的四个功能</h3>
+<table>
+  <tr><th style="width:8%">选</th><th style="width:38%">功能</th><th>什么时候用</th></tr>
+  <tr><td>1</td><td>库存播报（看警报）</td><td>想知道哪些料快用完了</td></tr>
+  <tr><td>2</td><td>按生产计划算采购建议</td><td>接了单，先算要不要报采购</td></tr>
+  <tr><td>3</td><td>生成今日日报</td><td>下班前留档</td></tr>
+  <tr><td>4</td><td>导入新的库存余额表</td><td>柠檬云导出新库存表后导入</td></tr>
+</table>
+
+<h3>怎么判断"库存够不够"</h3>
+<p>不看绝对数量，看<strong>还能做几个批次</strong>。一个标准批次按 2 万片 × 0.5g = 10kg 计：</p>
+<ul>
+  <li><strong>警戒线 = 单批用量 × 2</strong>。例如赤藓糖醇占配方 70%，单批用 7kg，警戒线就是 14kg</li>
+  <li>库存 &lt; 警戒线 → <strong>不足</strong>（连 2 批都做不了，要报采购）</li>
+  <li>库存 &lt; 警戒线 × 1.5 → <strong>偏低</strong>（还能做 2~3 批，提前备料）</li>
+  <li>包材（瓶、盖、袋、标签、膜）按固定底线：500 个 / 膜 20kg</li>
+</ul>
+
+<h3>要报采购时怎么拿数字</h3>
+<p>选「<strong>2</strong> 按生产计划算采购建议」→ 选产品、填产量（可连续加多单）→ 程序直接给出每种料的
+<strong>本批需求、现有库存、缺口、建议采购量</strong>，并可存成文件发给采购。</p>
+<div class="tip">
+  建议采购量 = 本批需求 + 警戒线 − 现有库存。这样买回来既够这一单，也留出了安全余量，不会下次接单又断料。
+</div>
+
+<h3>批次管理（重要）</h3>
+<p>同一物料常分多批入库。系统把批次单独记录，投料时按<strong>有效期先进先出（FIFO）</strong>自动分配。</p>
+<table>
+  <tr><th style="width:46%">场景</th><th>系统怎么处理</th></tr>
+  <tr><td>某物料共 520kg，分 3 批（300 + 200 + 20）</td><td>库存按 520kg 计，够做 520kg 的产品</td></tr>
+  <tr><td>本单需要 400kg</td><td>自动分配：20260525 取 300 ＋ 20260610 取 100</td></tr>
+  <tr><td>本单需要 520kg</td><td>三批全部用上：300 ＋ 200 ＋ 20</td></tr>
+  <tr><td>本单需要 600kg</td><td>三批用完后提示「缺 80kg」，自动进入采购建议</td></tr>
+</table>
+<p>录入方式：<strong>库存管理 → 4 批次管理</strong> → 选物料 → <strong>1 添加批次</strong>（批号 / 数量 / 生产日期 / 有效期）。</p>
+<div class="tip">
+  批次合计与账面数量不一致时，播报会用黄色标出差额，便于发现漏录；采购建议里还会直接给出「这批用哪几个批次、各取多少」。
+</div>
+
+<h2>五、常见问题</h2>
+
+<h3>双击后黑窗口一闪就没了</h3>
+<p>正常情况下窗口会停留等你输入。如果一闪就关，先等 3 秒再看有没有出现；仍然不行就告诉我，我远程查。</p>
+
+<h3>提示「该产品已存在」</h3>
+<p>说明配方库里已经有同名产品。如果要改它，需要修改 <code>recipes.json</code>，或者换个名字，
+也可以把新配方发我，我来改。</p>
+
+<h3>物料库存要怎么填</h3>
+<p>平时不用填，直接回车跳过。只有在<strong>原料不够</strong>时（比如大豆分离蛋白只剩 5.6kg），
+在对应物料那行填入库存量，程序会自动算出「这批最多能做多少万片」，并在结果里提示。</p>
+
+<h3>生成的单子里哪些要手填</h3>
+<p>程序已自动填好：日期、产品名、计划产量、制表人、生产编号、批次、销售经理、各物料用量、混料说明、压片规格。
+还需要车间/质检现场填的是：设备编号、清洁确认、开始结束时间、签字、实际生产数量、退料与损耗等。</p>
+
+<h3>实际产量填在哪</h3>
+<p>单子包装区的「<strong>实际生产数量</strong>」那一行，程序已放了 <code>______ 万片（生产后填写）</code> 的提示，做完直接改成真实数字。</p>
+
+<h2>六、文件都在哪</h2>
+<table>
+  <tr><th style="width:34%">内容</th><th>位置</th></tr>
+  <tr><td>程序目录</td><td><code>本文件所在目录\</code>（解压后的 <code>软件\OrderSystem\</code>）</td></tr>
+  <tr><td>配方库</td><td><code>本目录\recipes.json</code></td></tr>
+  <tr><td>库存数据</td><td><code>本目录\stock.json</code></td></tr>
+  <tr><td>配方与库存对照</td><td><code>本目录\mapping.json</code></td></tr>
+  <tr><td>订单台账</td><td><code>本目录\orders.json</code></td></tr><tr><td>每日日报</td><td><code>本目录\data\daily\日期.md</code></td></tr>
+  <tr><td>采购建议</td><td><code>本目录\data\purchase\</code></td></tr>
+  <tr><td>空白模板</td><td><code>桌面\文件\生产指令与交接单.xlsx</code>（不要删，程序每次从这里取）</td></tr>
+  <tr><td>生成的单子</td><td><code>桌面\10月\日期\单号+产品名\</code></td></tr>
+  <tr><td>算量核对表</td><td><code>桌面\文件\生产指令算量器.xlsx</code>（想手工核对用量时用）</td></tr>
+</table>
+
+<p class="small" style="margin-top:26px;border-top:1px solid #e5e8ec;padding-top:12px">
+本说明由 AI 生成，内容以实际使用为准。程序与配方数据均保存在本机，不上传任何服务器。</p>
+
+</body>
+</html>

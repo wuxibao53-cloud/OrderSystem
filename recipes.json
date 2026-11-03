@@ -1,0 +1,444 @@
+{
+ "_说明": "配方库：ratio 为百分比；stage 对应 stages 下标；batch 为最近一次使用的批号，可在使用时修改",
+ "赤藓糖醇控制能量片": {
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "赤藓糖醇",
+    "ratio": 70.0,
+    "stage": 0,
+    "batch": "20260419"
+   },
+   {
+    "name": "微晶纤维素",
+    "ratio": 25.0,
+    "stage": 0,
+    "batch": "20260707"
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 4.0,
+    "stage": 0,
+    "batch": "20260525"
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 1.0,
+    "stage": 1,
+    "batch": "20260402"
+   }
+  ],
+  "packaging": {
+   "per_bottle": 60,
+   "per_box": 500,
+   "coat": "无",
+   "shape": "圆形"
+  }
+ },
+ "葡萄糖补充能量片": {
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先加",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "一水葡萄糖",
+    "ratio": 59.3,
+    "stage": 0,
+    "batch": "20260623"
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 40.0,
+    "stage": 0,
+    "batch": "20260525"
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 0.7,
+    "stage": 1,
+    "batch": "20260402"
+   }
+  ],
+  "packaging": {
+   "per_bottle": 60,
+   "per_box": 500,
+   "coat": "无",
+   "shape": "圆形",
+   "materials": [
+    {
+     "name": "包装瓶-PET120白瓶",
+     "qty": 1
+    },
+    {
+     "name": "瓶盖-PET35白双压旋盖",
+     "qty": 1
+    },
+    {
+     "name": "标签-佰雀归防伪标签",
+     "qty": 1
+    },
+    {
+     "name": "干燥剂-干燥剂",
+     "qty": 1
+    }
+   ]
+  }
+ },
+ "葡萄糖压片糖果": {
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先加",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "一水葡萄糖",
+    "ratio": 40.0,
+    "stage": 0,
+    "batch": "20260623"
+   },
+   {
+    "name": "山梨糖醇",
+    "ratio": 10.0,
+    "stage": 0,
+    "batch": "20260709"
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 49.3,
+    "stage": 0,
+    "batch": "20260525"
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 0.7,
+    "stage": 1,
+    "batch": "20260402"
+   }
+  ],
+  "packaging": {
+   "per_bottle": 60,
+   "per_box": 500,
+   "coat": "无",
+   "shape": "圆形"
+  }
+ },
+ "维生素耐力片": {
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先将",
+    "action": "预混",
+    "time": "5"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "10-15"
+   },
+   {
+    "name": "三次混装原料",
+    "prefix": "最后加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "麦芽糊精",
+    "ratio": 53.75,
+    "stage": 0,
+    "batch": "20260225"
+   },
+   {
+    "name": "维生素B1",
+    "ratio": 0.25,
+    "stage": 0,
+    "batch": "20251215"
+   },
+   {
+    "name": "维生素B2",
+    "ratio": 0.15,
+    "stage": 0,
+    "batch": "20251215"
+   },
+   {
+    "name": "维生素B6",
+    "ratio": 0.15,
+    "stage": 0,
+    "batch": "20260402"
+   },
+   {
+    "name": "一水葡萄糖",
+    "ratio": 45.0,
+    "stage": 1,
+    "batch": "20260623"
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 0.7,
+    "stage": 2,
+    "batch": "20260402"
+   }
+  ],
+  "packaging": {
+   "per_bottle": 60,
+   "per_box": 500,
+   "coat": "无",
+   "shape": "圆形"
+  }
+ },
+ "大豆分离蛋白蛋白补充片": {
+  "_备注": "比例按 20261022-05 实际投料 10.18kg 反推（当时大豆分离蛋白库存仅 5.6kg，故整批缩量）",
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先加",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "大豆分离蛋白",
+    "ratio": 55.0,
+    "stage": 0,
+    "batch": "20260702"
+   },
+   {
+    "name": "一水葡萄糖",
+    "ratio": 34.0,
+    "stage": 0,
+    "batch": "20260623"
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 10.0,
+    "stage": 0,
+    "batch": "20260525"
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 1.0,
+    "stage": 1,
+    "batch": "20260402"
+   }
+  ],
+  "packaging": {
+   "per_bottle": 60,
+   "per_box": 500,
+   "coat": "无",
+   "shape": "圆形"
+  }
+ },
+ "骨胶原蛋白肽片": {
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先加",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "牛骨胶原蛋白肽",
+    "ratio": 40.0,
+    "stage": 0,
+    "batch": "20251110"
+   },
+   {
+    "name": "山梨糖醇",
+    "ratio": 14.0,
+    "stage": 0,
+    "batch": "20260709"
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 45.0,
+    "stage": 0,
+    "batch": "20260910"
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 1.0,
+    "stage": 1,
+    "batch": "20260402"
+   }
+  ],
+  "packaging": {
+   "per_bottle": 60,
+   "per_box": 500,
+   "coat": "无",
+   "shape": "圆形"
+  }
+ },
+ "INZENT虾青素": {
+  "category": "压片糖果",
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先加",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "一水葡萄糖",
+    "ratio": 54.3,
+    "stage": 0,
+    "batch": ""
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 35.0,
+    "stage": 0,
+    "batch": ""
+   },
+   {
+    "name": "碳酸钙",
+    "ratio": 10.0,
+    "stage": 0,
+    "batch": ""
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 0.7,
+    "stage": 1,
+    "batch": ""
+   }
+  ],
+  "packaging": {
+   "per_bottle": 30,
+   "per_box": 60,
+   "coat": "无",
+   "shape": "圆形",
+   "materials": [
+    {
+     "name": "茶瓶150cc",
+     "qty": 1
+    },
+    {
+     "name": "银盖",
+     "qty": 1
+    },
+    {
+     "name": "干燥剂",
+     "qty": 1
+    }
+   ]
+  }
+ },
+ "压片糖果（红色包衣）": {
+  "category": "压片糖果",
+  "tablet_g": 0.5,
+  "stages": [
+   {
+    "name": "一次混装原料",
+    "prefix": "先加",
+    "action": "预混",
+    "time": "10-15"
+   },
+   {
+    "name": "二次混装原料",
+    "prefix": "再加",
+    "action": "混合",
+    "time": "5"
+   }
+  ],
+  "materials": [
+   {
+    "name": "一水葡萄糖",
+    "ratio": 43.5,
+    "stage": 0
+   },
+   {
+    "name": "麦芽糊精",
+    "ratio": 30.0,
+    "stage": 0
+   },
+   {
+    "name": "山梨糖醇",
+    "ratio": 15.0,
+    "stage": 0
+   },
+   {
+    "name": "碳酸钙",
+    "ratio": 10.0,
+    "stage": 0
+   },
+   {
+    "name": "硬脂酸镁",
+    "ratio": 1.5,
+    "stage": 1
+   }
+  ],
+  "packaging": {
+   "per_bottle": 30,
+   "per_box": 500,
+   "coat": "红色包衣",
+   "shape": "圆形",
+   "materials": []
+  }
+ }
+}

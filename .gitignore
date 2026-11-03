@@ -1,0 +1,27 @@
+# 真实业务数据（不上传）
+data/
+orders.json
+stock.json
+自动备份/
+inbox/
+记忆本/
+记忆层/
+.workbuddy/
+
+# 构建产物与临时文件
+dist/
+__pycache__/
+*.pyc
+Cache/
+
+# 备份与可执行文件
+*.bak
+*.bak2
+学生档案系统.exe
+*.exe
+
+# 编辑器/系统文件
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
